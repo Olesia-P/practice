@@ -1,18 +1,17 @@
-import "./App.scss";
+import css from "./App.module.scss";
+import React from "react";
+// import cx from "classnames";
+import MyIcons from "./MyIcons/MyIcons";
 
 function App() {
+  // const [toDoList, setToDoList] = useState([]);
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
-      </p>
+    <div className={css.App}>
+      {/* //     <div className={css.addTask}></div>
+  //     <input />
+  //     <button>Add Task</button>
+  //     <div className={css.list}></div> */}
+      <MyIcons icon="clear-sky-night" />
     </div>
   );
 }
